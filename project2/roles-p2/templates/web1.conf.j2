@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+    ServerName web1
+    DocumentRoot /var/www/web1
+    ErrorLog /var/log/httpd/web1-error.log
+    CustomLog /var/log/httpd/web1-access.log combined
+
+    <Directory /var/www/web1>
+        Options Indexes FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+</VirtualHost>

@@ -1,0 +1,5 @@
+---
+# vars file for roles-p2
+site1: web1
+site2: web2
+dest: /var/www/

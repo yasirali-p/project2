@@ -1,0 +1,5 @@
+- name: HTTPD web hosting deployment
+  hosts: server1
+  become: yes
+  roles:
+    - roles-p2

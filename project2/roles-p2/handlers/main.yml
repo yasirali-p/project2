@@ -1,0 +1,12 @@
+---
+# handlers file for roles-p2
+
+- name: restart firewall
+  service:
+    name: firewalld
+    state: restarted
+
+- name: restart httpd
+  service:
+    name: "{{package}}"
+    state: restarted

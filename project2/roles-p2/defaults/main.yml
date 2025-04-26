@@ -1,0 +1,5 @@
+---
+# defaults file for roles-p2
+
+package: httpd
+virtualhostalma: /etc/httpd/conf.d
